@@ -1,0 +1,96 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   border: none;
+   transition: all .3s linear;
+   background-color: transparent;
+   color: aliceblue;
+   font-size: 22px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+   background-color: #202020;
+   overflow-x: hidden;
+   padding: 0 2%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.animation {
+   animation: show .4s;
+}
+
+@keyframes show {
+   50% {
+      transform: scale(1.1);
+   }
+}
+::selection {
+   background-color: coral;
+   color: #202020;
+}
+
+button {
+   /* border:  2px solid aliceblue; */
+   background-color: coral;
+   padding: 12px 24px;
+   color: #202020;
+   border-radius: 10px;
+   font-weight: 600;
+}
+button:hover {
+   background-color: black;
+   color: white;
+   cursor: pointer;
+   box-shadow: 2px 2px 1px coral;
+}
+.menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   width: 25vw;
+   row-gap: 1rem;
+   border-right: 1px solid rgb(254, 254, 254,.1);
+   margin-right: 5%;
+}
+select {
+   border: 1px solid rgb(254, 254, 254);
+   border-radius: 10px;
+   padding: 12px 24px;
+   font-weight: bold;
+}
+option {
+   background-color: #202020;
+}
+
+.colors {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+}
+.color {
+   display: block;
+   content: "";
+   width: 100px;
+   height: 100px;
+   background-color: transparent;
+}
+.block__color {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 0 10px;
+}
+.block__color p {
+   color: #cdcdcd;
+   font-size: 16px;
+   margin-top: 10px;
+}

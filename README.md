@@ -1,1 +1,1 @@
-# Pallete-Generator-For-Designer-
+# Pallete-Generator-For-Designer
